@@ -35,7 +35,7 @@ public class Main {
             System.out.println("Waluta: " + polaczenie(Url).getCurrency());
             System.out.println("Kurs walut miesiac wczesniej, z daty: "+ dataMiesiacWczesniejDoDruku()
                     +  " to: " + df.format(kursyWalutMiesiacWczesnieej));
-            System.out.println("Kursy walut obecnie, za daty "+ obecnaData() + " to: "+ kursyWalutObecne);
+            System.out.println("Kursy walut obecnie, z daty "+ obecnaData() + " to: "+ kursyWalutObecne);
 
 
             double miesiacPrzed = przelicznik(100, kursyWalutMiesiacWczesnieej);
@@ -53,8 +53,8 @@ public class Main {
 
 
     private static Waluty polaczenie(String url) throws IOException {
-        URL funt = new URL(url);
-        URLConnection connection = funt.openConnection();
+        URL polacz = new URL(url);
+        URLConnection connection = polacz.openConnection();
         Scanner scanfunt = new Scanner(connection.getInputStream());
         String pobraneDane = scanfunt.nextLine();
         Gson gson = new Gson();
