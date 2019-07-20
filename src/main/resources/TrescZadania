@@ -1,0 +1,16 @@
+Przelicznik Walut
+
+- Napisz program, ktory wyswietli aktualne kursy srednie czterech wybranych
+  walut (USD, EUR, GBP, CHF ) i ile warte jest 100 PLN w tych walutach
+
+- Kursy nalezy pobrac z serwisu internetowego, a wyniki wyswietlic na konsoli
+
+- Wskzowki
+  * Jako zrodlo aktualnych kursow uzyj serwisu api.nbp.pl
+  * Wyslij zadanie API ze swojego kodu
+  * Do zamiany JSONa na obiekt javovy mozesz uzyc biblioteki Gson
+
+- Zadanie dodatkowe
+  * Przy przeliczaniu 100 PLN na waluty, uzyj kursu sprzedazy
+  * Oblicz, ile bysmy zarobili/stracili, zamieniajac 100 PLN na walute miesiac temu
+    (tj. ile dzis warte (w PLN) jest x EUR, ktore kupilisny miesiac temu za 100 PLN)
